@@ -2,8 +2,21 @@
 // x & y are static variables
 
 // Put your code here.
-
-
-
+push static 0
+pop static 1
+push constant 0
+push static 0
+lt
+neg 
+if-goto LOOPEND
+push static 0
+push static 0
+sub
+pop static 1
+push static 1
+push static 0
+sub
+pop static 1
+label LOOPEND
 label END
 goto END
